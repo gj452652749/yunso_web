@@ -43,7 +43,7 @@
                      <li>
                         <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">我的应用</span>  <span class="pull-right label label-primary">SPECIAL</span></a>
                         <ul class="nav nav-second-level collapse">
-                            <li><a href="overview.html">应用信息</a></li>
+                            <li><a v-link="{ path: '/overview' }">应用信息</a></li>
                             <li><a href="analysis.html">分词器</a></li>
                             <li><a href="datasource.html">我的数据源</a></li>
                             <li><a href="dataimport.html">导入数据</a></li>

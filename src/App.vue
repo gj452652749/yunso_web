@@ -4,7 +4,10 @@
       <navbar-component></navbar-component>      
         <div id="page-wrapper" class="gray-bg">
         <head-component></head-component>
+        <router-view></router-view>
+        <!--
         <overview-component></overview-component>
+        -->
          <footer-component></footer-component>
         </div>
         <rightsidebar-component></rightsidebar-component>
