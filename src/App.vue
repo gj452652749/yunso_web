@@ -1,18 +1,14 @@
 <template>
-  <div id="app">
     <div id="wrapper">
-      <navbar-component></navbar-component>      
+      <outlook-component></outlook-component>
+      <!--<navbar-component></navbar-component>      
         <div id="page-wrapper" class="gray-bg">
         <head-component></head-component>
         <router-view></router-view>
-        <!--
-        <overview-component></overview-component>
-        -->
          <footer-component></footer-component>
         </div>
-        <rightsidebar-component></rightsidebar-component>
+        <rightsidebar-component></rightsidebar-component>-->
     </div>
-  </div>
 </template>
 
 <script>
@@ -22,7 +18,7 @@ import NavbarComponent from './components/common/navbar'
 import RightsidebarComponent from './components/common/rightsidebar'
 import OverviewComponent from './components/app/overview'
 import DatasourceComponent from './components/app/datasource'
-
+import OutlookComponent from './components/app/outlook'
 export default {
   components: {
     HeadComponent,
@@ -30,7 +26,7 @@ export default {
     NavbarComponent,
     RightsidebarComponent,
     OverviewComponent,
-    DatasourceComponent
+    OutlookComponent
   }
 }
 </script>
