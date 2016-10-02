@@ -1,0 +1,6 @@
+{"total":28,"rows":[
+	{"name":"id","type":"string","column":"id"},
+	{"name":"title","type":"ik分词器","column":"title"},
+	{"name":"page","type":"string","column":"page"},
+	{"name":"text","type":"ik分词器","column":"text"}
+]}

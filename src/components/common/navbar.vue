@@ -45,8 +45,8 @@
                         <ul class="nav nav-second-level collapse">
                             <li><a v-link="{ path: '/overview' }">应用信息</a></li>
                             <li><a href="analysis.html">分词器</a></li>
-                            <li><a href="datasource.html">我的数据源</a></li>
-                            <li><a href="dataimport.html">导入数据</a></li>
+                            <li><a v-link="{ path: '/datasource' }">我的数据源</a></li>
+                            <li><a v-link="{ path: '/dataimport' }">导入数据</a></li>
                             <li><a href="query.html">查询</a></li>
                         </ul>
                     </li>                  

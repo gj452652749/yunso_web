@@ -21,6 +21,7 @@ import FooterComponent from './components/common/footer'
 import NavbarComponent from './components/common/navbar'
 import RightsidebarComponent from './components/common/rightsidebar'
 import OverviewComponent from './components/app/overview'
+import DatasourceComponent from './components/app/datasource'
 
 export default {
   components: {
@@ -28,7 +29,8 @@ export default {
     FooterComponent,
     NavbarComponent,
     RightsidebarComponent,
-    OverviewComponent
+    OverviewComponent,
+    DatasourceComponent
   }
 }
 </script>
