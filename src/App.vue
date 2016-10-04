@@ -1,13 +1,13 @@
 <template>
     <div id="wrapper">
-      <outlook-component></outlook-component>
-      <!--<navbar-component></navbar-component>      
+      <!--<outlook-component></outlook-component>-->
+      <navbar-component></navbar-component>      
         <div id="page-wrapper" class="gray-bg">
         <head-component></head-component>
         <router-view></router-view>
          <footer-component></footer-component>
         </div>
-        <rightsidebar-component></rightsidebar-component>-->
+        <rightsidebar-component></rightsidebar-component>
     </div>
 </template>
 

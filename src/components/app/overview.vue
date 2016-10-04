@@ -123,6 +123,7 @@
             }
         },
         ready() {
+            //sessionStorage.do='true';
             var theIs=this;
                     $.ajax({
                     type: "get",
@@ -131,7 +132,7 @@
                     success: function(data){
                         console.log(data);
                         theIs.getData();
-                        Drawer.drawCharts();
+                        //Drawer.drawCharts();
                     },
                     error: function(){
                         console.log('fail');
@@ -142,6 +143,7 @@
             getData:function() {
                 console.log('getData');
             }
+           
         }
     }
 </script>

@@ -15,7 +15,8 @@ router.map({
     component: Overview
   },
   '/datasource': {
-    component: Datasource
+    component: Datasource,
+    force: true
   },
   '/dataimport': {
     component: Dataimport

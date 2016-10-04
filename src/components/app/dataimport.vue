@@ -185,7 +185,7 @@
                                     </h1>
 
                                     <!--tavle config-->
-                                    <!--
+                                    
                                     <div>
                         <table id="dg" class="easyui-datagrid" style="height:auto"
                            data-options="iconCls: 'icon-edit', url: '/static/datas/datagrid_data1.json', method: 'get'">
@@ -230,7 +230,7 @@
                         </table>
                         
                     </div>
-                -->
+                
                                     <p class="small">
                                         <strong>Best regards, Anthony Smith </strong>
                                     </p>
@@ -565,8 +565,18 @@
 <script>
     /* eslint-disable */
     import Dih from './dih'
+    import Routerfresh from './routerrefresh'
     export default {
         ready() {
+            // require("script!../../../static/assets/js/inspinia.js");
+            var sessionpara= sessionStorage.do;
+            console.log(sessionpara+'fxxk');
+            if(sessionpara=='true') {
+                //location.href='http://localhost:8081/index.html#!/datasource';
+                sessionStorage.do='false';
+                location.reload();
+            }
+            Routerfresh.updateActive(3);
             Dih.init();
         }
     }

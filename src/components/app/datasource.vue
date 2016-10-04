@@ -547,3 +547,44 @@
 
             </div>
 </template>
+<script>
+    // require("script!../../../static/assets/js/jquery-2.1.1.js");
+    // require("script!../../../static/assets/js/bootstrap.min.js");
+    // require("script!../../../static/assets/js/plugins/metisMenu/jquery.metisMenu.js");
+    // require("script!../../../static/assets/js/inspinia.js");
+    // require("script!../../../static/assets/js/plugins/slimscroll/jquery.slimscroll.min.js");
+    //location.reload();
+    export default {
+
+        ready() {
+            var theIs=this;
+            // require("script!../../../static/assets/js/inspinia.js");
+            var no= theIs.getUrlVars()["no"];
+            var sessionpara= sessionStorage.do;
+            console.log(sessionpara+'fxxk'+no);
+            console.log('fxxk');
+            if(sessionpara=='true') {
+                //location.href='http://localhost:8081/index.html#!/datasource';
+                sessionStorage.do='false';
+                location.reload();
+            }
+            theIs.updateActive(no);
+        },
+        methods: {
+            getUrlVars:function() {
+                var vars = {};
+                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&#]*)/gi,
+                    function(m,key,value) {
+                        vars[key] = value;
+                    }
+                );
+                return vars;
+                console.log('getData');
+            },
+            updateActive:function(no) {
+                $("#myapp li:eq("+no+")").addClass("active");
+                console.log(no+'getData');
+            }
+        }
+    }
+</script>
